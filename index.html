@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="asset/css/main.css">
+    <title>Kiku</title>
+</head>
+<body>
+    <main>
+        <header>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="asset/img/SVG/logo.svg" alt="">
+                </a>
+
+            </div>
+        </header>
+        <section class="details">
+            <h1>We help emerging <br> 
+                talent to grow.</h1>
+            <p>We help our Australia artists navigate 
+                the world of all things music and performance, 
+                through bookings, introductions to industry 
+                personnel, creative networking opportunities, 
+                design and photography.</p>    
+            <p>We’re always happy to talk to emerging artists, 
+                so hit the button below to say hi.</p>
+            <p>
+                <a href="#">
+                    <button>Get in touch</button>
+                </a>
+
+            </p>
+        </section>
+        <footer>
+            <p class="copyText">© KIKU <span id="copyDate"></span> | Site by Ramen</p>
+        </footer>
+
+    </main>
+    <script>
+        const d = new Date();
+        let year = d.getFullYear();
+        document.querySelector("#copyDate").textContent = year;
+    </script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+@font-face {
+    font-family: CircularStd;
+    src: url(../fonts/CircularStd-Book.otf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: CircularStd;
+    src: url(../fonts/CircularStd-Bold.otf);
+    font-weight: bold;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: CircularStd;
+    font-weight: normal;
+    background-color: black;
+    background-image: url(../img/SVG/background_img.svg);
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size:70%;
+    /* banckground- */
+}
+main {
+    background-color: #023513;
+    font-size: 15px;
+    color: #fff;
+    min-height: 100vh;
+    height: 100%;
+    padding:0 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    max-width: 500px;
+}
+
+ footer {
+    flex: 0;
+}
+.details {
+    flex: 1;
+    display: flex; /* if you remove this line it works on Safari */
+    flex-direction: column;
+  }
+main h1 {
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+.logo img {
+
+    width: 204px;
+    margin: 50px 0 50px 0px;
+}
+p {
+    margin-top: 30px 0 0 0;
+    max-width: 400px;
+    line-height: 25px;
+}
+button {
+    /* margin-top: 30px 0 0 0; */
+    background-color: #ffefcf;
+    color: #023513;
+    padding: 5px 15px;
+    border-radius: 15px;
+    font-weight: bold;
+    border: 0;
+    font-size: 16px;
+}
+.copyText {
+    color:#ffefcf77;
+    font-size: 10px;
+}
+
+/* aside {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../img/SVG/background_img.svg);
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: 100%;
+} */
+
+@media screen and (max-width:800px) {
+    main {
+        background-color: #023513;
+        font-size: 15px;
+        color: #fff;
+        min-height: 100vh;
+        height: 100%;
+        padding:0 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        max-width: 800px;
+        width: 100%;
+    }
+}
